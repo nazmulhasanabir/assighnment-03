@@ -27,74 +27,56 @@
     </style>
   </head>
   <body>
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div
-          class="-rotate-45 rounded-full bg-btn-grn w-8 h-8 flex items-center justify-center m-2"
-        >
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
-        <a class="font-manrope text-3xl font-extrabold">Rinterio</a>
-      </div>
-
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal gap-3">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Blogs</li>
-          <li>Contact Us</li>
-        </ul>
-      </div>
-      <!-- icon -->
-      <div class="navbar-end">
-        <div class="gap-4 hidden lg:flex justify-center">
-        <i class="fa-solid fa-magnifying-glass w-6 h-6 m-4 "></i>
-        <i class="fa-solid fa-cart-shopping w-6 h-6 m-4"></i>
-        <!-- book and icon -->
-        <div
-          class="bg-btn-grn w-48 h-14 rounded-3xl md:flex items-center justify-around px-2"
-        >
-        <div>
-          <h3 class="font-extrabold">Book Consult</h3>
-        </div>
-          
-          <div
-            class="rounded-full bg-black flex justify-center item-center p-3"
-          >
-            <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+        <!-- Left Content -->
+        <div class="md:w-1/2 space-y-4">
+          <button class="w-48 md:w-full flex items-center justify-center px-4 py-2 bg-gray-200 text-black rounded-full">
+            <span class="mr-2">About Us</span>
+            <span class="flex items-center justify-center w-8 h-8 bg-black text-white rounded-full">
+              &rarr;
+            </span>
+          </button>
+          <h1 class="text-4xl font-bold">We design thoughtful, liveable spaces</h1>
+          <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+    
+          <div class="space-y-4">
+            <!-- Card 1 -->
+            <div class="flex items-center p-4 bg-white shadow-md rounded-lg">
+              <div class="flex-shrink-0">
+                <!-- Icon -->
+                <svg class="h-12 w-12 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26c.39.26.89.26 1.28 0L21 8M3 8v8c0 .5.25.8.6.94m0 0C4.07 17.97 4.53 18 5 18h14c.47 0 .93-.03 1.4-.06m0 0A.992.992 0 0021 16V8m-7 8V10l-4 2.5V16m0 0H5m10 0h6" />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h2 class="font-semibold text-xl">Commercial</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="flex items-center p-4 bg-white shadow-md rounded-lg">
+              <div class="flex-shrink-0">
+                <!-- Icon -->
+                <svg class="h-12 w-12 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10v4h8v-4M7 8h10m4 4h2a2 2 0 00-2-2h-4a2 2 0 00-2 2h-4a2 2 0 00-2-2H5a2 2 0 00-2 2h2v4m0 4v2a2 2 0 002 2h10a2 2 0 002-2v-2H7v-4" />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h2 class="font-semibold text-xl">Residential</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-        <div class="dropdown dropdown-bottom dropdown-end">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              class="inline-block h-5 w-5 stroke-current"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li><a>Home</a></li>
-            <li>Services</li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
-          </ul>
-
+    
+        <!-- Right Image -->
+        <div class="md:w-1/2">
+          <img src="your-image-source.jpg" alt="Modern House" class="w-full rounded-lg">
         </div>
       </div>
     </div>
+    
   </body>
 </html>
